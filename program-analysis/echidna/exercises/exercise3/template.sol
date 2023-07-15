@@ -12,9 +12,11 @@ contract TestToken is MintableToken {
     address echidna = msg.sender;
 
     // TODO: update the constructor
-    constructor(int256 totalMintable) public MintableToken(totalMintable) {}
+    constructor() public MintableToken(10000) {
+        owner = echidna;
+    }
 
     function echidna_test_balance() public view returns (bool) {
-        // TODO: add the property
+        return balances[msg.sender] <= 10000;
     }
 }

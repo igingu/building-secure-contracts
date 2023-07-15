@@ -16,5 +16,6 @@ contract TestToken is Token {
 
     function echidna_cannot_be_unpause() public view returns (bool) {
         // TODO: add the property
+        return paused();
     }
 }
