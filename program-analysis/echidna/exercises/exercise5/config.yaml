@@ -1,0 +1,6 @@
+#balanceAddr is default balance for addresses
+balanceAddr: 0xffffffff
+#balanceContract overrides balanceAddr for the contract address
+balanceContract: 0
+
+multi-abi: true
